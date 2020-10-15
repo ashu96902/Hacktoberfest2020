@@ -19,3 +19,14 @@
 - Now open the forked repository on GitHub, where you will notice a Pull Request Button.
 - Click on it and Make A Pull Request and you are DONE!.
 #### Congratulations you added your Alexa Skill!!
+
+<h1>Steps to Build a Custom Skill</h1>
+Step 1: Plan and Design Your Skill
+Step 2: Set Up the Skill in the Developer Console
+Step 3: Use the Voice Design to Build Your Interaction Model
+Step 4: Write and Test the Code for Your Skill
+Step 5: Beta Test Your Skill (Optional)
+Step 6: Submit Your Skill For Certification
+See Test and Submit Your Skill for Certification.
+
+Your Skill is Published, Now 
