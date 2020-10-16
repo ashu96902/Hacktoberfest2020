@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+using namespace std;
+
+int main()
+{
+	int **a,row,col,i,j,sum=0;
+	printf("Enter limit for rows:");
+	scanf("%d",&row);
+	printf("Enter limit for columns:");
+	scanf("%d",&col);
+	a=(int**)malloc(row*sizeof(int*));
+	for (i=0;i<row;i++)
+	{
+		a[i]=(int*)malloc(col*sizeof(int));
+	}
+	printf("Enter the elements of the matrix of size %d*%d:\n",row,col);
+	for (i=0;i<row;i++)
+	{
+		for(j=0;j<col;j++)
+		{
+			scanf("%d",&a[i][j]);
+		}
+	}
+	printf("\n%d*d matrix: \n\n",row,col);
+	for (i=0;i<row;i++)
+	{
+		for(j=0;j<col;j++)
+		{
+			printf("%d",a[i][j]);
+		}
+		printf("\n");
+	}
+	for (i=0;i<row;i++)
+	{
+		for(j=0;j<col;j++)
+		{
+			if(i==j||i+j==row-1)
+			sum=sum+a[i][j];
+		}
+	}
+	printf("%d",sum);
+	return 0;	
+	getch();
+}
